@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  labelle_treatment: MyString
+  traduction_french: MyString
+  traduction_malagasy: MyString
+
+two:
+  title: MyString
+  labelle_treatment: MyString
+  traduction_french: MyString
+  traduction_malagasy: MyString
