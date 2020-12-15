@@ -7,11 +7,19 @@ ruby 2.7.1p
 # version rails
  Rails 6.0.3.4
 
+# database postgresql
+ 
+
 # mode de  deployement de l'application
-vous devez entrer dans le dossier TreatmentSelector_backend
+vous devez entrer dans le dossier TreatmentSelector_backend ouvrir un terminal
 
-  1- run rails db:create
-  2- run rails db:migrate
-  3- run rails db:seed
+  1- git clone https://github.com/Sambatra2020/TraitmentSelector_backend.git
+  2- cd TraitmentSelector_backend
+  3- bundle install
+  4- rails db:create
+  5- rails db:migrate
+  6- rails db:seed
 
-et apres run rails server pour lancer le serveur du coté backend
+Et apres run rails server pour lancer le serveur du coté backend sur le port 4000
+
+  7- rails s -p4000
