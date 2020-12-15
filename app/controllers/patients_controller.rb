@@ -1,5 +1,6 @@
 class PatientsController < ApplicationController
   before_action :set_patient, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:auto_login]
 
   # GET /patients
   def index

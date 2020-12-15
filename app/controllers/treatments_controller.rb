@@ -1,5 +1,6 @@
 class TreatmentsController < ApplicationController
   before_action :set_treatment, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:auto_login]
 
   # GET /treatments
   def index
@@ -46,6 +47,6 @@ class TreatmentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def treatment_params
-      params.require(:treatment).permit(:title, :labelle_treatment, :traduction_french, :traduction_malagasy)
+      params.require(:treatment).permit(:title, :labelle_treatment, :traduction_french, :traduction_malagasy,:category_id)
     end
 end

@@ -1,11 +1,15 @@
 class ListTreatmentsController < ApplicationController
   before_action :set_list_treatment, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:auto_login]
 
   # GET /list_treatments
   def index
     @list_treatments = ListTreatment.all
-
-    render json: @list_treatments
+    @data=[]
+    @list_treatments.each do |t|
+      @data.push({'patient': t.patient , 'treatment': t.treatment})
+    end
+    render json: @data
   end
 
   # GET /list_treatments/1

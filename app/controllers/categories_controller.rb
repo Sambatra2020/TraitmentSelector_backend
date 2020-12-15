@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :update, :destroy]
+  before_action :authorized, only: [:auto_login]
 
   # GET /categories
   def index
@@ -49,6 +50,6 @@ class CategoriesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def category_params
-      params.require(:category).permit(:labelle_categorie)
+      params.require(:category).permit(:labelle_categorie,:categorie_french,:categorie_malagasy)
     end
 end

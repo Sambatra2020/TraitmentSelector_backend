@@ -23,7 +23,7 @@ Category.create(labelle_categorie: 'Examinations')
  Treatment.create( title: 'cardiac catheterization', traduction_french: "", traduction_malagasy: "", category_id: 2)
 
 # Ajout Admin
-Admin.create(name:"admin" ,password: "admin2020")
+ Admin.create(adminname: "admin", password: "admin")
 
 # Ajout Patient
  Patient.create(name: "patient 0")
