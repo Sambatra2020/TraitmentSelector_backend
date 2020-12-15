@@ -20,6 +20,6 @@
   * 5- rails db:migrate
   * 6- rails db:seed
 
-# Et apres run rails server pour lancer le serveur du coté backend sur le port 4000
+  * Et apres run rails server pour lancer le serveur du coté backend sur le port 4000
 
   * 7- rails s -p4000
